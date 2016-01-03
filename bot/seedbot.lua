@@ -220,71 +220,49 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    sudo_users = {171117943},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v1
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[amir w.h and megatron tm
 
-https://github.com/SEEDTEAM/TeleSeed
+
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@seyedan25 [Manager]
+amir w.h 
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
 
-Our channels
-@teleseedch [English]
+
 ]],
     help_text = [[
 Commands list :
 
 !kick [username|id]
-You can also do it by reply
-
+شما میتوانید باریپلای فرد مورد نظر را کیک کنید!
 !ban [ username|id]
-You can also do it by reply
-
+شما میتوانید با ریپلای فرد مورد نظر را بن کنید!
 !unban [id]
-You can also do it by reply
-
+شما میتوانید با ریپلای فرد مورد نظر را از بن خارج کنید!
 !who
-Members list
-
+لیست افراد گروه
 !modlist
-Moderators list
-
+لیست مدیران گروه
 !promote [username]
-Promote someone
-
+مدیر کردن فرد مورد نظر
 !demote [username]
-Demote someone
-
+خلع مدیریت فرد مورد نظر
 !kickme
-Will kick user
-
+مرا از گروه حذف کن!
 !about
-Group description
-
+درباره گروه
 !setphoto
-Set and locks group photo
-
+گزاشتن تصویر گروه
 !setname [name]
-Set group name
-
+گزاشتن نام گروه
 !rules
-Group rules
-
+قوانین گروه
 !id
-return group id or user id
-
+ای دی 
 !help
 
 !lock [member|name|bots]
