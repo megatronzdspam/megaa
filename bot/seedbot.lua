@@ -219,6 +219,10 @@ function create_config( )
     "download_media",
     "invite",
     "all"
+    "calc"
+    "tgservice"
+    "gps"
+    "tex"
     },
     sudo_users = {171117943},--Sudo users
     disabled_channels = {},
