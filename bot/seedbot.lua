@@ -219,7 +219,6 @@ function create_config( )
     "download_media",
     "invite",
     "all"
-    "tgservice"
     "gps"
     "tex"
     },
