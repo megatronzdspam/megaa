@@ -132,9 +132,9 @@ local function is_plugin_disabled_on_chat(plugin_name, receiver)
     -- Checks if plugin is disabled on this chat
     for disabled_plugin,disabled in pairs(disabled_chats[receiver]) do
       if disabled_plugin == plugin_name and disabled then
-        local warning = 'Plugin '..disabled_plugin..' is disabled on this chat'
-        print(warning)
-        send_msg(receiver, warning, ok_cb, false)
+         print('پلاگین '..disabled_plugin..' در این گروه غیر فعال شد.')
+        else
+            local warning = 'پلاگین '..disabled_plugin..'  در این گروه غیر فعال شد.'
         return true
       end
     end
@@ -232,106 +232,7 @@ function create_config( )
 
 
 
-Admins
-amir w.h 
 
-
-
-]],
-    help_text = [[
-Commands list :
-
-!kick [username|id]
-شما میتوانید باریپلای فرد مورد نظر را کیک کنید!
-!ban [ username|id]
-شما میتوانید با ریپلای فرد مورد نظر را بن کنید!
-!unban [id]
-شما میتوانید با ریپلای فرد مورد نظر را از بن خارج کنید!
-!who
-لیست افراد گروه
-!modlist
-لیست مدیران گروه
-!promote [username]
-مدیر کردن فرد مورد نظر
-!demote [username]
-خلع مدیریت فرد مورد نظر
-!kickme
-مرا از گروه حذف کن!
-!about
-درباره گروه
-!setphoto
-گزاشتن تصویر گروه
-!setname [name]
-گزاشتن نام گروه
-!rules
-قوانین گروه
-!id
-ای دی 
-!help
-
-!lock [member|name|bots]
-Locks [member|name|bots] 
-
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
-]]
 
   }
   serialize_to_file(config, './data/config.lua')
