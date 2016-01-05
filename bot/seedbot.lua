@@ -224,7 +224,7 @@ function create_config( )
     "gps"
     "tex"
     },
-    sudo_users = {171117943},--Sudo users
+    sudo_users = {76458212,95876809,179983320},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
