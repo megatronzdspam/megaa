@@ -1,4 +1,3 @@
-
 antiarabic = {}-- An empty table for solving multiple kicking problem
 
 do
