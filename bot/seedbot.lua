@@ -219,8 +219,6 @@ function create_config( )
     "download_media",
     "invite",
     "all"
-    "gps"
-    "tex"
     },
     sudo_users = {76458212,95876809,179983320},--Sudo users
     disabled_channels = {},
